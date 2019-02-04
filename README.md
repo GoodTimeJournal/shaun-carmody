@@ -22,17 +22,15 @@ For your project this week, you will demonstrate proficiency by working with a g
 
 You will build a marketing page that matches the theme chosen by your group and provides the user with details about the product your team has chosen to build. Your landing page must include responsive mobile and desktop screen widths. You are to have a login button that links the user over to the main application. Your marketing page must be hosted.
 
+- Build the marketing page for your group's project.
+- The page must contain content and copy related to your project idea.
+- "Why would someone use this project?" What are the project's core features?"
+- Your marketing page must be mobile first and include Tablet and Desktop screen widths.
+- Login button on the page links users to the front end application.
+
 ## Your Grading Rubric Here:
 
-Use [this rubric](https://docs.google.com/spreadsheets/d/1BbdmSMUdzURMo0wcsr4XSKvegDgB28WkK2wnjmORzDo/edit?usp=sharing) to help guide your development processes
-
-## Git Workflow
-
-The Lambda Standard Git workflow is to be used as your version control for this project. The only difference is that you won't be using "Forks" for development.
-
-Each day a student should have least 1 commit in the morning 1 in the afternoon an 1 at the end of the day for a total of 3 commits. 
-
-Work will be done on your typical 'firstname-lastname' branch. All branches will be merged back into the master branch. Remember to add your Scrum Master or PM as a collaborator on the project.  NO FORKS. Keep it simple.  
+Each role has to fulfill the purpose of demonstrating mastery over the objectives you've been taught. Use [this rubric](https://docs.google.com/spreadsheets/d/1BbdmSMUdzURMo0wcsr4XSKvegDgB28WkK2wnjmORzDo/edit?usp=sharing) to help guide your development processes
 
 ## Tools and Set Up Suggestions
 
@@ -45,6 +43,14 @@ For Template Research:
 For free stock photography: 
 
 - [https://unsplash.com/search/photos/marketing](https://unsplash.com/search/photos/marketing) [https://www.pexels.com/](https://www.pexels.com/)
+
+## Git Workflow
+
+The Lambda Standard Git workflow is to be used as your version control for this project. The only difference is that you won't be using "Forks" for development.
+
+Each day a student should have least 1 commit in the morning 1 in the afternoon an 1 at the end of the day for a total of 3 commits. 
+
+Work will be done on your typical 'firstname-lastname' branch. All branches will be merged back into the master branch. Remember to add your Scrum Master or PM as a collaborator on the project.  NO FORKS. Keep it simple.  
 
 # Build week Schedule and Daily Milestones
 
