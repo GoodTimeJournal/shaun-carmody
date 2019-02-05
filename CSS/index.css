@@ -126,6 +126,195 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.feature-asset {
-  width: 400px;
+.btn {
+  background-color: green;
+  border: red;
+  color: yellow;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4rem;
+}
+h6 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.6rem;
+}
+.container {
+  padding: 0 1%;
+}
+@media (min-width: 800px) {
+  .container {
+    margin: auto;
+    max-width: 1000px;
+  }
+}
+.main-header {
+  border: 1px solid black;
+  height: 50px;
+  padding: 0 1%;
+}
+.main-header .header-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+@media (min-width: 800px) {
+  .main-header .header-container {
+    margin: auto;
+    max-width: 1000px;
+  }
+}
+.main-header .header-container .menu {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+}
+.main-header .header-container .menu .menu-icon {
+  height: 30px;
+  margin: auto;
+  width: 30px;
+}
+.main-header .header-container .menu nav {
+  display: none;
+  margin-top: 50px;
+}
+.landing {
+  margin: 50px 0 100px 0;
+}
+@media (min-width: 800px) {
+  .landing {
+    display: flex;
+  }
+}
+@media (min-width: 800px) {
+  .landing .landing-cta {
+    width: 50%;
+  }
+}
+.landing .landing-cta h1 {
+  margin-top: 130px;
+  text-align: center;
+}
+.landing .landing-cta p {
+  margin-top: 10px;
+  text-align: center;
+}
+.landing .landing-cta svg {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+.landing .landing-asset {
+  display: none;
+}
+@media (min-width: 800px) {
+  .landing .landing-asset {
+    display: block;
+    width: 50%;
+  }
+}
+.landing .landing-asset svg {
+  display: block;
+  margin: auto;
+  max-height: 400px;
+}
+.reviews article {
+  display: none;
+}
+.reviews .placeholder {
+  display: block;
+  min-width: 300px;
+  margin: auto;
+  max-width: 500px;
+  text-align: center;
+  width: 70%;
+}
+.reviews .placeholder p {
+  margin-top: 10px;
+}
+.features .feature {
+  margin-top: 100px;
+}
+@media (min-width: 500px) {
+  .features .feature {
+    align-items: center;
+    display: flex;
+  }
+}
+@media (min-width: 500px) {
+  .features .feature .feature-asset {
+    width: 50%;
+  }
+}
+.features .feature .feature-asset svg {
+  display: block;
+  height: auto;
+  margin: auto;
+}
+@media (min-width: 500px) {
+  .features .feature .feature-copy {
+    width: 50%;
+  }
+}
+@media (min-width: 500px) {
+  .features .feature:nth-child(even) .feature-asset {
+    order: 1;
+  }
+}
+.team {
+  display: flex;
+}
+.team article img {
+  border-radius: 50%;
+  display: block;
+  max-width: 80px;
+  margin: auto;
+}
+.team article h3 {
+  display: none;
+}
+@media (min-width: 500px) {
+  .team article h3 {
+    display: block;
+  }
+}
+.team article p {
+  display: none;
+}
+@media (min-width: 500px) {
+  .team article p {
+    display: block;
+  }
+}
+.cta {
+  margin-top: 100px;
+}
+.footer {
+  height: 100px;
+  margin-top: 100px;
+}
+.footer .icons {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 150px;
+  width: 100%;
+}
+.footer .icons a {
+  height: 30px;
+  width: 30px;
+}
+.footer p {
+  margin-top: 40px;
+  text-align: center;
 }

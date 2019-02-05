@@ -1,0 +1,28 @@
+.team {
+    display: flex;
+
+    article {
+        img {
+            border-radius: 50%;
+            display: block;
+            max-width: 80px;
+            margin: auto;
+        }
+
+        h3 {
+            display: none;
+
+            @media @min500 {
+                display: block;
+            }
+        }
+
+        p {
+            display: none;
+
+            @media @min500 {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,3 +1,37 @@
-.feature-asset {
-    width: 400px;
+.features {
+    .feature {
+        margin-top: 100px;
+
+        @media @min500 {
+            align-items: center;
+            display: flex;
+        }
+
+        .feature-asset {
+            @media @min500 {
+                width: 50%;
+            }
+
+            svg {
+                display: block;
+                height: auto;
+                margin: auto;
+            }
+        }
+
+        .feature-copy {
+            @media @min500 {
+                width: 50%;
+            }
+            
+        }
+    }
+
+    .feature:nth-child(even) {
+        .feature-asset {
+            @media @min500 {
+                order: 1;;
+            }
+        }
+    }
 }
