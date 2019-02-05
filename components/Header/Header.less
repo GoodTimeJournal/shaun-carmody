@@ -1,12 +1,10 @@
 .main-header {
-    border: 1px solid @border;
-    height: 50px;               // <------ Heigth or padding flex align items needs work.
-    padding: 0 1%;
+    height: 65px;
+    padding: 18px 2% 0;
 
     .header-container {
         display: flex;
         justify-content: space-between;
-        position: relative;
 
         @media @min800 {
             margin: auto;
@@ -14,15 +12,11 @@
         }
 
         .menu {
-            border: 1px solid black;
             display: flex;
             flex-direction: column;
-            position: absolute;
-            right: 0;
 
             .menu-icon {
                 height: 30px;
-                margin: auto;
                 width: 30px;
             }
 
@@ -30,6 +24,10 @@
                 display: none;
                 margin-top: 50px;
             }
+        }
+
+        .login {
+            .btn();
         }
     }
 }

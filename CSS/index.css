@@ -127,9 +127,23 @@ table {
   border-spacing: 0;
 }
 .btn {
-  background-color: green;
-  border: red;
-  color: yellow;
+  background-color: rgba(35, 211, 211, 0.8);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 100;
+  border-radius: 30px;
+  width: 80px;
+  padding: 10px 0;
+  text-align: center;
+}
+.btn:hover {
+  background-color: rgba(35, 211, 211, 0.5);
+}
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Serif SC Bold'), local('NotoSerifSC-Bold'), url(https://fonts.gstatic.com/s/notoserifsc/v2/H4c8BXePl9DZ0Xe7gG9cyOj7mhqzezdLEA.otf) format('opentype');
 }
 * {
   box-sizing: border-box;
@@ -137,13 +151,28 @@ table {
 html {
   font-size: 62.5%;
 }
+a {
+  font-family: sans-serif;
+  text-decoration: none;
+}
 h1 {
-  font-size: 4rem;
+  font-family: sans-serif;
+  font-size: 4.5rem;
+}
+h2 {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+h3 {
+  font-family: sans-serif;
+  font-size: 2rem;
 }
 h6 {
+  font-family: sans-serif;
   font-size: 2rem;
 }
 p {
+  font-family: sans-serif;
   font-size: 1.6rem;
 }
 .container {
@@ -156,14 +185,12 @@ p {
   }
 }
 .main-header {
-  border: 1px solid black;
-  height: 50px;
-  padding: 0 1%;
+  height: 65px;
+  padding: 18px 2% 0;
 }
 .main-header .header-container {
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 @media (min-width: 800px) {
   .main-header .header-container {
@@ -172,20 +199,29 @@ p {
   }
 }
 .main-header .header-container .menu {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  right: 0;
 }
 .main-header .header-container .menu .menu-icon {
   height: 30px;
-  margin: auto;
   width: 30px;
 }
 .main-header .header-container .menu nav {
   display: none;
   margin-top: 50px;
+}
+.main-header .header-container .login {
+  background-color: rgba(35, 211, 211, 0.8);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 100;
+  border-radius: 30px;
+  width: 80px;
+  padding: 10px 0;
+  text-align: center;
+}
+.main-header .header-container .login:hover {
+  background-color: rgba(35, 211, 211, 0.5);
 }
 .landing {
   margin: 50px 0 100px 0;
@@ -195,29 +231,46 @@ p {
     display: flex;
   }
 }
+.landing .landing-cta {
+  background-color: #F1F2F6;
+  margin-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
 @media (min-width: 800px) {
   .landing .landing-cta {
     width: 50%;
   }
 }
 .landing .landing-cta h1 {
-  margin-top: 130px;
+  color: #100249;
+  font-family: 'Noto Serif SC', serif;
+  margin-top: -20px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+.landing .landing-cta h3 {
+  color: #100249;
+  font-family: 'Noto Serif SC', serif;
+  line-height: 1.3;
+  padding-top: 60px;
   text-align: center;
 }
 .landing .landing-cta p {
-  margin-top: 10px;
+  color: #444444;
+  margin-top: 20px;
   text-align: center;
 }
 .landing .landing-cta svg {
   display: block;
   margin: auto;
-  margin-top: 30px;
-}
-.landing .landing-asset {
-  display: none;
+  margin-top: 60px;
 }
 @media (min-width: 800px) {
   .landing .landing-asset {
+    order: 1;
     display: block;
     width: 50%;
   }
@@ -227,19 +280,35 @@ p {
   margin: auto;
   max-height: 400px;
 }
-.reviews article {
+.reviews .review {
   display: none;
 }
-.reviews .placeholder {
+.reviews .active {
   display: block;
+  line-height: 1.3;
   min-width: 300px;
   margin: auto;
-  max-width: 500px;
+  text-align: center;
+}
+.reviews .active p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.reviews .review-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 70px;
+  max-width: 200px;
   text-align: center;
   width: 70%;
 }
-.reviews .placeholder p {
-  margin-top: 10px;
+.reviews .review-controls .tab {
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
 }
 .features .feature {
   margin-top: 100px;
@@ -259,6 +328,7 @@ p {
   display: block;
   height: auto;
   margin: auto;
+  width: 100%;
 }
 @media (min-width: 500px) {
   .features .feature .feature-copy {
@@ -272,6 +342,15 @@ p {
 }
 .team {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  min-width: 400px;
+  width: 70%;
+}
+.team h3 {
+  width: 100%;
+  text-align: center;
 }
 .team article img {
   border-radius: 50%;
@@ -280,20 +359,18 @@ p {
   margin: auto;
 }
 .team article h3 {
-  display: none;
-}
-@media (min-width: 500px) {
-  .team article h3 {
-    display: block;
-  }
+  text-align: center;
 }
 .team article p {
-  display: none;
+  text-align: center;
 }
-@media (min-width: 500px) {
-  .team article p {
-    display: block;
-  }
+.team .flex-30 {
+  margin-top: 40px;
+  width: 30%;
+}
+.team .flex-50 {
+  margin-top: 40px;
+  width: 50%;
 }
 .cta {
   margin-top: 100px;
