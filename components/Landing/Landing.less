@@ -1,19 +1,24 @@
 .landing {
     margin: 115px 0 0 0; // Extra 65px to compensate for fixed header.
 
-    @media @min800 {
+    @media @min600 {
         display: flex;
     }
 
     .landing-cta {
         background-color: @mobile-landing-bg;
+        // border: 1px solid red;
         margin-top: 20px;
         padding-bottom: 120px;
         position: relative;
 
-        @media @min800 {
+        @media @min600 {
             background-color: initial;
             width: 50%;
+        }
+
+        @media @min800 {
+            width: 60%;
         }
 
         &:before {
@@ -23,7 +28,7 @@
           content: "";
           width: 100%;
 
-          @media @min800 {
+          @media @min600 {
               display: none;
           }
         }
@@ -37,7 +42,7 @@
             right: 0;
             text-align: center;
 
-            @media @min800 {
+            @media @min600 {
                 margin-top: 30px;
                 position: relative;
             }
@@ -69,18 +74,24 @@
     }
 
     .landing-asset {
-        // display: none;
+        // border: 1px solid red;
 
-        @media @min800 {
+        @media @min600 {
             order: 1;
-            display: block;
             width: 50%;
         }
 
+        @media @min800 {
+            display: block;
+            width: 40%;
+        }
+
         svg {
+            // border: 1px solid red;
             display: block;
             margin: auto;
             max-height: 400px;
+            max-width: 100%;
         }
         
     }
