@@ -1,5 +1,15 @@
 .team {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    min-width: 400px;
+    width: 70%;
+
+    h3 {
+        width: 100%;
+        text-align: center;
+    }
 
     article {
         img {
@@ -10,19 +20,21 @@
         }
 
         h3 {
-            display: none;
-
-            @media @min500 {
-                display: block;
-            }
+            text-align: center;
         }
 
         p {
-            display: none;
-
-            @media @min500 {
-                display: block;
-            }
+            text-align: center;
         }
+    }
+
+    .flex-30 {
+        margin-top: 40px;
+        width: 30%;
+    }
+
+    .flex-50 {
+        margin-top: 40px;
+        width: 50%;
     }
 }
