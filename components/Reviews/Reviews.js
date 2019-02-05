@@ -3,7 +3,6 @@ class Tab {
         this.element = props;
         this.tab = props.dataset.tab;
         this.review = document.querySelector(`.review[data-review='${this.tab}']`);
-        console.log(this.review.querySelector('h6').textContent.length);
         this.element.addEventListener('click', e => this.display());
     }
 

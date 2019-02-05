@@ -6,25 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Design Your Life - Good Time Journal</title>
     <link rel="stylesheet" href="css/index.css">
-    <script src="components/Reviews/Reviews.js" async></script>
+    <script src="components/Header/Header.js" defer></script>
+    <script src="components/Reviews/Reviews.js" defer></script>
 </head>
 
 <body>
     <header class="main-header">
         <div class="header-container">
+            <img src="assets/good-time-journal.jpg" alt="Good Time Journal Logo">
             <div class="menu">
-                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bars" class="menu-icon" role="img"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path fill="currentColor" d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"></path>
-                </svg>
-                <nav>
-                    <p>Reviews</p>
-                    <p>Features</p>
-                    <p>Team</p>
-
+                <div class="arrow arrow-down"></div>
+                <nav class="menu-nav">
+                    <a href="#reviews">Reviews</a>
+                    <a href="#features">Features</a>
+                    <a href="#team">Team</a>
                 </nav>
+                <a href="#" class="login">Login</a>
             </div>
-            <a href="#" class="login">Login</a>
         </div>
     </header>
     <main class="container">
@@ -412,7 +410,7 @@
                 </svg>
             </div>
         </header>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <article class="review active" data-review="1">
                 <h6>
                     "Life has questions. They have answers... Learn<br>
@@ -464,7 +462,7 @@
                 <div class="tab" data-tab="5"></div>
             </div>
         </section>
-        <section class="features">
+        <section class="features"  id="features">
             <article class="feature">
                 <div class="feature-asset">
                     <svg class="feature-asset" id="d26dba8d-8282-42fd-a478-7c8636ce52fe" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
@@ -1002,7 +1000,7 @@
                 </div>
             </article>
         </section>
-        <section class="team">
+        <section class="team" id="team">
             <h3>Made with empathy by</h3>
             <article class="flex-30">
                 <img src="assets/bill-burnett.jpg" alt="Bill Burnett">
