@@ -1,5 +1,5 @@
 .landing {
-    margin: 115px 0 100px 0; // Extra 65px to compensate for fixed header.
+    margin: 115px 0 0 0; // Extra 65px to compensate for fixed header.
 
     @media @min800 {
         display: flex;
@@ -7,12 +7,25 @@
 
     .landing-cta {
         background-color: @mobile-landing-bg;
-        margin-top: 120px;
+        margin-top: 20px;
         padding-bottom: 120px;
         position: relative;
 
         @media @min800 {
+            background-color: initial;
             width: 50%;
+        }
+
+        &:before {
+          background-image: linear-gradient(to top, @mobile-landing-bg, rgb(255, 255, 255));
+          display: block;
+          height: 100px;
+          content: "";
+          width: 100%;
+
+          @media @min800 {
+              display: none;
+          }
         }
 
         h1 {
@@ -23,6 +36,11 @@
             position: absolute;
             right: 0;
             text-align: center;
+
+            @media @min800 {
+                margin-top: 30px;
+                position: relative;
+            }
         }
 
         h3 {
@@ -30,7 +48,11 @@
             font-family: @landing-font;
             line-height: 1.3;
             padding-top: 60px;
-            text-align: center
+            text-align: center;
+
+            @media @min800 {
+                padding-top: 10px;
+            }
         }
 
         p {
