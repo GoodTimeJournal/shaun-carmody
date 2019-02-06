@@ -15,13 +15,30 @@ class Tab {
         this.review.classList.toggle('active');
     }
 
-} 
+}
 
-class Review {
+let i = 0;
+
+const count = (array) => {
+    if (i >= array.length) i = 0;
+    array[i].click();
+    i ++;
+}
+
+class Reviews {
     constructor(props) {
         this.element = props;
+        this.reviews = Array.from(document.querySelectorAll('.review'));
+        this.tab = Array.from(document.querySelectorAll('.tab'));
+        this.setInterval();
+    }
+
+    setInterval() {
+        setInterval(count, 5000, this.tab);
     }
 }
 
 document.querySelectorAll('.tab').forEach(el => new Tab(el));
-document.querySelectorAll('.review').forEach(el => new Review(el));
+
+let reviews = document.querySelector('.reviews');
+reviews = new Reviews (reviews);

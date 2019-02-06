@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Design Your Life - Good Time Journal</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+    <script src="scripts/ScrollToPlugin.min.js"></script>
     <script src="components/Header/Header.js" defer></script>
     <script src="components/Reviews/Reviews.js" defer></script>
     <script src="components/Footer/Footer.js" defer></script>
+    
 </head>
 
 <body>
@@ -18,9 +22,9 @@
             <div class="menu">
                 <div class="arrow arrow-down"></div>
                 <nav class="menu-nav">
-                    <a href="#reviews">Reviews</a>
-                    <a href="#features">Features</a>
-                    <a href="#team">Team</a>
+                    <a href="#reviews" class="quick-link" data-id="reviews">Reviews</a>
+                    <a href="#features" class="quick-link" data-id="features">Features</a>
+                    <a href="#team" class="quick-link" data-id="team">Team</a>
                 </nav>
                 <a href="https://goodtimejournal-ak.netlify.com/" class="login">Login</a>
             </div>
@@ -412,7 +416,7 @@
             </div>
         </header>
         <section class="reviews" id="reviews">
-            <article class="review active" data-review="1">
+            <article class="review" data-review="1">
                 <h3>
                     "Life has questions. They have answers... Learn<br>
                     how to find a fulfilling career... Learn how to<br>
@@ -448,7 +452,7 @@
                 </h3>
                 <p>David Kelley, Founder of IDEO</p>
             </article>
-            <article class="review" data-review="5">
+            <article class="review active" data-review="5">
                 <h3>
                     "An empowering app based on the popular class<br>
                     of the same name at Stanford University. This<br>
