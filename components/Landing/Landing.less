@@ -14,6 +14,7 @@
 
         @media @min600 {
             background-color: initial;
+            margin-top: 0;
             width: 50%;
         }
 
@@ -51,8 +52,12 @@
             padding-top: 60px;
             text-align: center;
 
+            @media @min600 {
+                padding-top: 50px;
+            }
+
             @media @min800 {
-                padding-top: 10px;
+                padding-top: 60px;
             }
         }
 
@@ -60,12 +65,28 @@
             color: @landing-secondary;
             margin-top: 20px;
             text-align: center;
+
+            @media @min600 {
+                margin-top: 10px;
+            }
+
+            @media @min800 {
+                margin-top: 20px;
+            }
         }
 
         svg {
             display: block;
             margin: auto;
             margin-top: 60px;
+
+            @media @min600 {
+                margin-top: 30px;
+            }
+
+            @media @min800 {
+                margin-top: 60px;
+            }
         }
     }
 

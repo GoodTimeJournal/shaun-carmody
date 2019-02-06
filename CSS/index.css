@@ -289,6 +289,7 @@ p {
 @media (min-width: 600px) {
   .landing .landing-cta {
     background-color: initial;
+    margin-top: 0;
     width: 50%;
   }
 }
@@ -327,9 +328,14 @@ p {
   padding-top: 60px;
   text-align: center;
 }
+@media (min-width: 600px) {
+  .landing .landing-cta h3 {
+    padding-top: 50px;
+  }
+}
 @media (min-width: 800px) {
   .landing .landing-cta h3 {
-    padding-top: 10px;
+    padding-top: 60px;
   }
 }
 .landing .landing-cta p {
@@ -337,10 +343,30 @@ p {
   margin-top: 20px;
   text-align: center;
 }
+@media (min-width: 600px) {
+  .landing .landing-cta p {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .landing .landing-cta p {
+    margin-top: 20px;
+  }
+}
 .landing .landing-cta svg {
   display: block;
   margin: auto;
   margin-top: 60px;
+}
+@media (min-width: 600px) {
+  .landing .landing-cta svg {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 800px) {
+  .landing .landing-cta svg {
+    margin-top: 60px;
+  }
 }
 @media (min-width: 600px) {
   .landing .landing-asset {
