@@ -8,8 +8,12 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin: auto;
-        min-width: 400px;
-        width: 70%;
+        // min-width: 400px;
+        width: 100%;
+
+        @media @min500 {
+            width: 70%;
+        }
 
         h3 {
             text-align: center;

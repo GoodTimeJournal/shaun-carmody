@@ -3,18 +3,19 @@ class Tab {
         this.element = props;
         this.tab = props.dataset.tab;
         this.review = document.querySelector(`.review[data-review='${this.tab}']`);
-        this.element.addEventListener('click', e => this.display());
+        this.element.addEventListener('click', () => this.display());
     }
 
     hide() {
-        document.querySelector('.active').classList.toggle('active');
+        document.querySelector('.review-active').classList.toggle('review-active');
+        document.querySelector('.tab-active').classList.toggle('tab-active');
     }
 
     display() {
         this.hide();
-        this.review.classList.toggle('active');
+        this.review.classList.toggle('review-active');
+        this.element.classList.toggle('tab-active');
     }
-
 }
 
 let i = 0;
