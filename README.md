@@ -2,6 +2,10 @@
 
 Hosted on [Netlify](https://goodtimejournal.netlify.com/).
 
+A responsive marketing page for Good Time Journal, based on the Design Your Life course at Standford, this app helps you figure out which activites bring you enjoyment, energy, and engagement.
+
+You will build a marketing page that matches the theme chosen by your group and provides the user with details about the product your team has chosen to build. Your landing page must include responsive mobile and desktop screen widths. You are to have a login button that links the user over to the main application. Your marketing page must be hosted.
+
 Pitch: Based on the Design Your Life course at Standford, this app helps you figure out which activites bring you enjoyment, energy, and engagement. These clues are the first step you need to take to design your ideal ife. The journal includes an activity log and a reflection log. Activity logs record daily your main activities, and a guage to show how engaged and energized you were. Reflection logs are done once a week to record your trends, insights and suprises as to what activities work and don't work for you.
 
 # Roadmap
