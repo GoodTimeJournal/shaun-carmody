@@ -30,6 +30,10 @@ Open `index.html`.
 * [Greensock](https://greensock.com/gsap).
 
 
-## Grading:
+# Grading:
 
 Use [this rubric](https://docs.google.com/spreadsheets/d/1BbdmSMUdzURMo0wcsr4XSKvegDgB28WkK2wnjmORzDo/edit?usp=sharing).
+
+# License
+
+[MIT](LICENSE).
