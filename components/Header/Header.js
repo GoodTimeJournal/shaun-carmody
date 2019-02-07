@@ -8,8 +8,6 @@ const header = {
 header.displayMenu = () => {
     header.icon.classList.remove('arrow-down');
     header.icon.classList.add('arrow-up');
-    header.nav.classList.add('shadow');
-    header.element.classList.remove('shadow');
     header.nav.style.display = 'flex';
 }
 
@@ -17,8 +15,6 @@ header.hideMenu = () => {
     header.icon.classList.remove('arrow-up');
     header.icon.classList.add('arrow-down');
     header.nav.style.display = 'none';
-    header.element.classList.add('shadow');
-    header.nav.classList.remove('shadow');
 }
 
 header.icon.addEventListener('click', (e) => {
@@ -39,7 +35,7 @@ window.addEventListener('resize', (e) => {
 header.scroll = (e) => {
     e.preventDefault();
     const id = document.getElementById(e.target.dataset.id);
-    const offset = header.element.clientHeight + header.nav.clientHeight + 20;
+    const offset = header.element.clientHeight + header.nav.clientHeight;
     const scroll = id.offsetTop - offset;
     TweenLite.to(window, 2, {scrollTo:scroll});
 }
