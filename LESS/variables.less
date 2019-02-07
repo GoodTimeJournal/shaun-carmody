@@ -1,8 +1,20 @@
+// @import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:700');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+
+
 // Media
 @min500: ~"(min-width: 500px)";
 @min600: ~"(min-width: 600px)";
 @min800: ~"(min-width: 800px)";
 @min1000: ~"(min-width: 1024px)";
+
+// Theme Colors
+@blue: rgba(30, 157, 247, 1);
+@blue-opaque: rgba(30, 157, 247, 0.8);
+@light-gray: rgba(241, 245, 249, 1);
+@gray: rgba(119, 119, 119, 1);
 
 // Colors
 @black: black;
@@ -18,8 +30,11 @@
 
 // Color assignments
 @border: @black;
-@button-bg:  rgba(35, 211, 211, 0.8);
-@button-bg-hover:  rgba(35, 211, 211, 0.5);
+
+// @button-bg:  rgba(35, 211, 211, 0.8);
+@button-bg: @blue;
+// @button-bg-hover:  rgba(35, 211, 211, 0.5);
+@button-bg-hover: @blue-opaque;
 @tab-bg:  rgb(35, 211, 211);
 @button-border: @red;
 @button-color: @white;
@@ -30,7 +45,11 @@
 @nav-links: @everton;
 
 // Fonts
-@landing-font: 'Noto Serif SC', serif;
+// @landing-font: 'Noto Serif SC', serif;
+@landing-font: 'Lora', serif;
+@landing-font: 'Libre Baskerville', serif;
+
+
 @feature-font: sans-serif;
 
 // Max width

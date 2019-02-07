@@ -5,31 +5,41 @@ const header = {
     links: Array.from(document.querySelectorAll('.quick-link')),
 }
 
+header.displayMenu = () => {
+    header.icon.classList.remove('arrow-down');
+    header.icon.classList.add('arrow-up');
+    header.nav.classList.add('shadow');
+    header.element.classList.remove('shadow');
+    header.nav.style.display = 'flex';
+}
+
+header.hideMenu = () => {
+    header.icon.classList.remove('arrow-up');
+    header.icon.classList.add('arrow-down');
+    header.nav.style.display = 'none';
+    header.element.classList.add('shadow');
+    header.nav.classList.remove('shadow');
+}
+
 header.icon.addEventListener('click', (e) => {
     if (Array.from(header.icon.classList).includes('arrow-down')) {
-        header.icon.classList.remove('arrow-down');
-        header.icon.classList.add('arrow-up');
-        header.nav.style.display = 'flex';
+        header.displayMenu();
     } else if (Array.from(header.icon.classList).includes('arrow-up')) {
-        header.icon.classList.remove('arrow-up');
-        header.icon.classList.add('arrow-down');
-        header.nav.style.display = 'none';
+        header.hideMenu();
     }
 });
 
 window.addEventListener('resize', (e) => {
     if (window.innerWidth >= 800) header.nav.style.display = 'inline-block';
     if (window.innerWidth < 800) {
-        header.icon.classList.remove('arrow-up');
-        header.icon.classList.add('arrow-down');
-        header.nav.style.display = 'none';
+        header.hideMenu();
     }
 });
 
 header.scroll = (e) => {
     e.preventDefault();
     const id = document.getElementById(e.target.dataset.id);
-    const offset = header.element.clientHeight + header.nav.clientHeight;
+    const offset = header.element.clientHeight + header.nav.clientHeight + 20;
     const scroll = id.offsetTop - offset;
     TweenLite.to(window, 2, {scrollTo:scroll});
 }
