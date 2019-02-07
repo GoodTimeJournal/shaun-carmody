@@ -6,11 +6,9 @@ A responsive marketing page for Good Time Journal, based on the Design Your Life
 
 See organization [repositories](https://github.com/GoodTimeJournal). 
 
-
 # Roadmap
 
 See [Trello](https://trello.com/b/gSdYvqAF/lambda-notes-shaun-carmody).
-
 
 # Getting Started
 
@@ -22,13 +20,11 @@ yarn global add less-watch-compiler
 ```
 Open `index.html`.
 
-
 # Technologies
 
 * Vanilla JS
 * LESS
 * [Greensock](https://greensock.com/gsap).
-
 
 # Grading:
 
