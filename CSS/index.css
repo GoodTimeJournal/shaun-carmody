@@ -377,11 +377,10 @@ p {
     width: 40%;
   }
 }
-.landing .landing-asset svg {
+.landing .landing-asset .screenshot {
   display: block;
   margin: auto;
-  max-height: 400px;
-  max-width: 100%;
+  width: 100%;
 }
 .reviews {
   background-color: #F1F2F6;
