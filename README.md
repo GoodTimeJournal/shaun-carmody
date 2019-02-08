@@ -4,7 +4,7 @@ Hosted on [Netlify](https://goodtimejournal.netlify.com/).
 
 A responsive marketing page for Good Time Journal, based on the Design Your Life course at Stanford, this app helps you figure out which activities bring you enjoyment, energy, and engagement.
 
-See organization [repositories](https://github.com/GoodTimeJournal). 
+See organization [repositories](https://github.com/GoodTimeJournal).
 
 # Roadmap
 
@@ -18,13 +18,14 @@ brew install yarn
 yarn global add less
 yarn global add less-watch-compiler
 ```
+
 Open `index.html`.
 
 # Technologies
 
-* Vanilla JS
-* LESS
-* [Greensock](https://greensock.com/gsap).
+- Vanilla JS
+- LESS
+- [Greensock](https://greensock.com/gsap).
 
 # Grading:
 
