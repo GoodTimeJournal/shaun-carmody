@@ -2,7 +2,7 @@
 
 Hosted on [Netlify](https://goodtimejournal.netlify.com/).
 
-A responsive marketing page for Good Time Journal, based on the Design Your Life course at Standford, this app helps you figure out which activites bring you enjoyment, energy, and engagement.
+A responsive marketing page for Good Time Journal, based on the Design Your Life course at Standford, this app helps you figure out which activities bring you enjoyment, energy, and engagement.
 
 See organization [repositories](https://github.com/GoodTimeJournal). 
 
